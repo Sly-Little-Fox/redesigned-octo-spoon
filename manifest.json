@@ -1,0 +1,17 @@
+{
+
+  "manifest_version": 2,
+  "name": "Something",
+  "version": "1.0",
+  "description": "Does something.",
+  "applications": {
+    "gecko": {
+      "id": "borderify@mozilla.org",
+      "strict_min_version": "45.0"
+    }
+  },
+  "content_scripts": [{
+    "matches": ["*://scratch.mit.edu/projects/*"],
+    "js": ["index.js"]
+  }]
+}
